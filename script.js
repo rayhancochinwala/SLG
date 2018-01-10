@@ -1,6 +1,6 @@
 const request = require('request-promise');
+const config = require('./config');
 
-exports.generate(links, callback) {
   links.forEach(function(link) {
     s(link)
   });
@@ -18,8 +18,7 @@ exports.generate(links, callback) {
       .then(function (json) {
         console.log(json.product.title);
         json.product.variants.forEach(function(size) {
-          callback(`${size.title} - http://${link.split('//')[1].split('/')[0]}/cart/${size.id}:1`, null);
+          console.log(`${size.title} - http://${link.split('//')[1].split('/')[0]}/cart/${size.id}:1`);
         })
       })
   }
-}
