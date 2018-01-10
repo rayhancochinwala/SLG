@@ -18,7 +18,7 @@ exports.generate(links, callback) {
       .then(function (json) {
         console.log(json.product.title);
         json.product.variants.forEach(function(size) {
-          console.log(`${size.title} - http://${link.split('//')[1].split('/')[0]}/cart/${size.id}:1`);
+          callback(`${size.title} - http://${link.split('//')[1].split('/')[0]}/cart/${size.id}:1`, null);
         })
       })
   }
