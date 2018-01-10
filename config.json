@@ -1,3 +1,5 @@
 {
-  "link": "http://footlocker.com"
+  "links": [
+    "http://footlocker.com"
+    ]
 }
