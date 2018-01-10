@@ -17,7 +17,7 @@ Type in console/terminal: ``npm i earlylinkgenerator``
 ### Step 2.<br>
 Use this example code to run it.
 
-```const api = require('earlylinkgenerator');
+``const api = require('earlylinkgenerator');
 
 links = ['array of links']
 
@@ -27,7 +27,7 @@ api.generate(links, (earlylinks, error) => {
   } else {
     console.log(earlylinks);
   }
-})```
+})``
 
 ## Script Installation
 
