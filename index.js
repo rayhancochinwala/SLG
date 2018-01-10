@@ -1,6 +1,6 @@
 const request = require('request-promise');
 
-exports.generate(links, callback) {
+exports.generate = function (links, callback) {
   links.forEach(function(link) {
     s(link)
   });
