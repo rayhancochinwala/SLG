@@ -15,10 +15,21 @@ Generates checkout/early links for shopify sites. Now an NPM module for develope
 Type in console/terminal: ``npm i earlylinkgenerator``
 
 ### Step 2.<br>
-Type in console/terminal: ``npm i``
-
-### Step 3.<br>
 Use this example code to run it.
+
+```
+const api = require('earlylinkgenerator');
+
+links = ['array of links']
+
+api.generate(links, (earlylinks, error) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(earlylinks);
+  }
+})```
+<br>
 
 ## Script Installation
 
